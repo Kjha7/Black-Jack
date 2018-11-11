@@ -14,6 +14,7 @@ public class Hand {
 	
 	void hit(Deck d) {
 		this.hand.add(d.fullDeck.get(0));
+		d.fullDeck.remove(0);
 	}
 	
 	int calculate_hand() {
